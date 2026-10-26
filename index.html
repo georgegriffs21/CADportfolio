@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CAD Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#0f172a;
+    color:white;
+    line-height:1.6;
+}
+
+header{
+    text-align:center;
+    padding:80px 20px;
+}
+
+header h1{
+    font-size:3rem;
+}
+
+header p{
+    color:#94a3b8;
+    margin-top:10px;
+}
+
+section{
+    max-width:1200px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#1e293b;
+    border-radius:12px;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#94a3b8;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Your Name</h1>
+    <p>CAD Designer | SolidWorks | Fusion 360 | AutoCAD</p>
+</header>
+
+<section>
+    <h2>About Me</h2>
+    <p>
+        I create CAD models, assemblies and technical drawings.
+        Below are a selection of projects showcasing my design skills.
+    </p>
+</section>
+
+<section>
+    <h2>Projects</h2>
+
+    <div class="projects">
+
+        <div class="card">
+            <img src="project1.jpg" alt="Project 1">
+            <div class="card-content">
+                <h3>Gearbox Assembly</h3>
+                <p>Designed and assembled a complete gearbox in SolidWorks.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="project2.jpg" alt="Project 2">
+            <div class="card-content">
+                <h3>Engine Mount</h3>
+                <p>Lightweight mechanical component designed for manufacture.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="project3.jpg" alt="Project 3">
+            <div class="card-content">
+                <h3>Fixture Design</h3>
+                <p>Custom workshop fixture created to improve efficiency.</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>Email: your@email.com</p>
+    <p>LinkedIn: linkedin.com/in/yourname</p>
+</footer>
+
+</body>
+</html>
